@@ -33,8 +33,8 @@ def contador_progesso():
 
 linuxbusca = sys.argv[2:]
 busca = str(', '.join(linuxbusca)).replace(", ","+")
-cursor.execute("DROP TABLE IF EXISTS dif_endereco_2;CREATE TABLE dif_endereco_2 (logradouro varchar,bairro varchar, cidadeestado varchar,cep varchar, estado varchar, complemento varchar);")
-print('TABELA dif_endereco_2 CRIADA')
+cursor.execute("DROP TABLE IF EXISTS dif_endereco;CREATE TABLE dif_endereco (logradouro varchar,bairro varchar, cidadeestado varchar,cep varchar, estado varchar, complemento varchar);")
+print('TABELA dif_endereco CRIADA')
 conn.commit()
 
 for page in range(1,500):
