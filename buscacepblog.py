@@ -6,9 +6,9 @@ import time
 from bs4 import BeautifulSoup
 
 dbname = sys.argv[1]
-user = 'chinchila'
+user = 'USER_BASE_DE_DADOS'
 host = 'localhost'
-password = 'chinchila'
+password = 'SENHA_BASE_DE_DADOS'
 port = '5434'
 ##Construção da string da conexão ao banco.
 conn_string = "dbname='{0}' user='{1}' host='{2}' port= '{3}' password='{4}'".format(dbname, user, host, port ,password)
